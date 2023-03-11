@@ -1,0 +1,74 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: rgb(111, 8, 155);
+    padding: 16px;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px
+}
+
+nav {
+    background-color: rgb(170, 0, 255);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(93, 0, 139);
+}
+
+footer {
+    background-color: #ccc;
+    color: #333;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+nav ul li a.actual {
+    background-color: rgb(93, 0, 139);
+}
+
+.holder {
+    max-width: 960px;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(0, 116, 110);
+    font-weight: 400;
+}

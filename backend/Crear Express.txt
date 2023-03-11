@@ -1,0 +1,17 @@
+npx express-generator --view=hbs
+
+npm i
+
+npm nodemon
+
+Modificar el "start" del json: "nodemon ./bin/www" 
+
+npm start
+
+-Para crear ruta en app.js:
+
+var nombrederutaRouter = require('./routes/nombreDeRuta') //ambos nombres de ruta no necesariamente tienen que ser iguales
+							  //para que funcione, nombreDeRuta tiene que tener un archivo js creado
+
+app.use('nombreDeRuta', nombrederutaRouter)
+
