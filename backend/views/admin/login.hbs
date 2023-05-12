@@ -1,0 +1,24 @@
+</br>
+<h2 class="holder" style="color: rgb(0, 116, 110)">¡Bienvenido! Por favor, ingrese su ususario y contraseña a continuación:</h2>
+</br>
+<div class="holder">
+    <form action="/admin/login" method="post">
+        <div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre de usuario:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Escriba su nombre de usuario" name="usuario">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Escriba su contraseña"
+                    name="password">
+            </div>
+        </div>
+        <button class="formulario" type="submit">Ingresar</button>
+    </form>
+    </br>
+    {{#if error}}
+        <p class="error">El usuario y/o contraseña ingresados han sido incorrectos.</p>
+    {{/if}}
+</div>

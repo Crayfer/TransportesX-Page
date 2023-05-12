@@ -6,6 +6,8 @@ import '../styles/galeria.css'
 const Galeria = (props) => {
     return (
         <main class="holder">
+            <br />
+            <h2 className="g">Galería</h2>
         <div class="galeria">
             <img src="img/g1.jpg" alt="Img 1"/>
             <img src="img/g2.jpg" alt="Img 2"/>

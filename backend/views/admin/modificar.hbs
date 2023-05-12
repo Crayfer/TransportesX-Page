@@ -1,0 +1,42 @@
+</br>
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4 class="cian">Modificar novedad:</h4>
+            <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="{{novedad.id}}">
+                <div class="mb-3 row">
+                    <label for="">Título:</label>
+                    <input type="text" class="form-control" placeholder="Inserte el título" 
+                    name="titulo" value="{{novedad.titulo}}">
+                </div>
+                <div class="mb-3 row">
+                    <label for="">Subtítulo:</label>
+                    <textarea type="text" class="form-control textarea" placeholder="Inserte el subtítulo"
+                    name="subtitulo" rows="3">{{novedad.subtitulo}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <label for="">Cuerpo:</label> 
+                    <textarea type="text" class="form-control textarea" placeholder="Inserte el contenido"
+                    name="cuerpo" rows="10">{{novedad.cuerpo}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <p>
+                        <label>Imagen:<input type="file" class="form-control" name="imagen"
+                        id="imagen"/></label>           
+                    </p>      
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete"
+                        value="1">¿Desea eliminar la imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                    </p>       
+                </div>
+                <button type="submit" class="formulario">Guardar cambios</button>
+            </form>
+            </br>
+            {{#if error}}
+                <p class="error">{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
