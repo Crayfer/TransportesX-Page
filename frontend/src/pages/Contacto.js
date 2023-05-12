@@ -79,7 +79,7 @@ const Contacto = (props) => {
             <ul>
                 <li>Teléfono: 3547613210</li>
                 <li>Email: joakoaltamirano55@gmail.com</li>
-                <li><Link to="/">Instagram</Link></li>
+                <li><Link to="https://www.instagram.com/joakoo.01/" target="_blank">Instagram</Link></li>
             </ul>
         </div>
     </main>
